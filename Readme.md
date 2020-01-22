@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+﻿# Личный проект «Седона»
 
 * Студент: [Anna Shablinskaya](https://up.htmlacademy.ru/htmlcss/27/user/1318653).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Горбачев`(https://htmlacademy.ru/profile/id92028).
 
 ---
 

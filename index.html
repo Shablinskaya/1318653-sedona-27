@@ -4,29 +4,29 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalaize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="cover">
-
+   <div class="conteiner">
     <header class="page-header">
       <ul class="main-navigation">
         <li class="left">
           <a href="#">Информация</a>
-        </li><!--
-       --><li class="left">
+        </li>
+       <li class="left">
           <a href="#">Фото и видео</a>
-        </li><!--
-        --><li class="header-logo">
+        </li>
+        <li class="header-logo">
             <a href="index.html">
               <img src="img/logo.svg" width="138" height="70" alt="Седона">
             </a>
-        </li><!--
-        --><li class="right">
+        </li>
+        <li class="right">
           <a href="./map.html">Карта штата</a>
-        </li><!--
-      --><li class="right">
+        </li>
+          <li class="right">
           <a href="sedona-hotels.html">Гостиницы</a>
         </li>
       </ul>
@@ -41,112 +41,108 @@
             <h1>Седона — небольшой городок в Аризоне,<br>
               заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </header><!--не поставилиа тэг мэйн плохо?-->
+          </header>
           <div class="index-columns">
-            <section class="resonse-1 one-third">
-              <ul>
-                <li><h2>Настоящий городок</h2></li><!--заголовок оставить в списке или нет как правильно-->
-                <li class="number">— №1 —</li>
-                <li class="text">Седона — не аттракцион для туристов, там течёт своя жизнь</li>
-              </ul>
+            <section class="resonse-text">
+                <h2 class="title">Настоящий городок</h2>
+                <p class="number">— №1 —</p>
+                <p class="text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </section>
-            <section class="resonse-pickture-1  two-third">
+            <section>
               <img src="img/feature-picture-1.jpg" alt="Изображение города" width="800" height="256">
             </section>
           </div>
-          <div class="resonse-details one-third">
-            <section class="resonse-1-details">
+            <section class="resonse-details">
               <ul class="houses">
                 <li><img src="img/icon-1.png" width="75" height="75"></li>
                 <li><h3>Жильё</h3></li>
-                <li>Рекомендуем пожить в настоящем мотеле, всё как в кино!</li>
+                <li class="text-resonse">Рекомендуем пожить в настоящем мотеле, всё как в кино!</li>
               </ul>
               <ul class="food">
                 <li><img src="img/icon-3.png" width="74" height="70" ></li>
                 <li><h3>Еда</h3></li>
-                <li>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</li>
+                <li class="text-resonse">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</li>
               </ul>
               <ul class="gifts">
                 <li><img src="img/icon-2.png" width="64" height="76"></li>
                 <li><h3>Сувениры</h3></li>
-                <li>Не только китайского, но и местного производства!</li>
+                <li class="text-resonse">Не только китайского, но и местного производства!</li>
               </ul>
             </section>
-          </div>
-          <div class="index-columns-2">
-            <section classs="resonse-pickture-2">
+          <div class="index-columns">
+            <section>
               <img src="img/layer-5.jpg" alt="Изобрпжение Моста дьявола" width="800" height="256">
             </section>
-            <section class="resonse-2">
-              <ul>
-                <li><h2>Там есть Мост дьявола</h2></li><!--заголовок оставить в списке или нет как правильно?-->
-                <li class="number">— №2 —</li>
-                <li class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</li>
-              </ul>
+            <section class="resonse-text">
+              <h2 class="title">Там есть<br> Мост дьявола</h2>
+              <p class="number">— №2 —</p>
+              <p class="text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </section>
           </div>
-          <div class="resonse-3-4-5">
-            <section class="resonse-3">
-            <h2>Небольшая площадь<h2><!--лучше параграф или список?-->
+          <div class="columns">
+            <section class="resonse-area">
+            <h2 class="title">Небольшая площадь<h2>
               <p clss="number">— №3 —</p>
               <p class="text">Все достопримечательности находятся очень близко</p>
             </section>
-            <section class="resonse-4">
-              <h2>Красивая дорога<h2>
+            <section class="resonse-road">
+              <h2 class="title">Красивая дорога<h2>
               <p clss="number">— №4 —</p>
               <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </section>
-            <section class="resonse-5">
-              <h2>Мало туристов<h2>
+            <section class="resonse-turists">
+              <h2 class="title">Мало туристов<h2>
               <p clss="number">— №5 —</p>
               <p class="text">Большинство едет в гранд каньон и толпится там</p>
             </section>
           </div>
-          <footer class="resonse">
+          <footer class="resonse-footer">
             <section class="resonse-send">
               <h1>Заинтересовались?</h1>
-              <p class="text-resonse-send">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-              <button type="button" class="btn-srch-window" id="serach-form">Поиск гостиницы в седоне</button>
+              <p class="text-resonse-send">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
             </section>
-            <form class="serach-form" name="serach-form" action="#" method="post"><!--правильно ли использовать тэг форм для всплывающего окна?-->
-              <p>
-                <lable for="check in">Дата заезда:</lable>
-                <input id="check in" type="text" name="check in" placeholder="24 апреля 2017" required>
-                <div class="icon-calendar"></div><!--какой атрибут для фиксирования значени?-->
-              </p>
-              <p>
-                <lable for="check out">Дата выезда:</lable>
-                <input id="check out" type="text" name="check out" placeholder="4 июля 2017" required>
-                <div class="icon-calendar"></div>
-              </p> 
-              <div class="form-line clearfix">
-                <div class="half-width">
-                  <label for="adult">Взрослые:</label>
-                  <div class="unit-container">
-                    <button class="btn minus-btn" type="button">
-                      <i class="icon-minus"></i>
-                    </button>
-                    <input class="unit field" type="text" name="adults" id="adult" value="2" required>
-                    <button class="btn plus-btn" type="button">
-                      <i class="icon-plus"></i>
-                    </button>
+            <div class="search-form-container">
+              <button type="button" class="btn-srch-window" id="serach-form">Поиск гостиницы в седоне</button>
+              <form class="search-form" name="serach-form" action="#" method="post"><!--правильно ли использовать тэг форм для всплывающего окна?-->
+                <div class="form-line">
+                  <label for="check in">Дата заезда:</label>
+                  <input class="date field" id="check in" type="text" name="check in" placeholder="24 апреля 2017" required>
+                  <div class="icon-calendar"></div><!--какой атрибут для фиксирования значени?-->
+                </div>
+                <div class="form-line">
+                  <label for="check out">Дата выезда:</label>
+                  <input class="date field" id="check out" type="text" name="check out" placeholder="4 июля 2017" required>
+                  <div class="icon-calendar"></div>
+                <div class="form-line clearfix">
+                </div>
+                  <div class="form-line half-width">
+                    <label for="adult">Взрослые:</label>
+                    <div class="unit-container">
+                      <button class="btn minus-btn" type="button">
+                        <i class="icon-minus"></i>
+                      </button>
+                      <input class="unit field" type="text" name="adults" id="adult" value="2" required>
+                      <button class="btn plus-btn" type="button">
+                        <i class="icon-plus"></i>
+                      </button>
+                    </div>
                   </div>
-                </div><!--
-             --><div class="half-width">
-                  <label for="kid">Дети:</label>
-                  <div class="unit-container clearfix">
-                    <button class="btn minus-btn" type="button">
-                      <i class="icon-minus"></i>
-                    </button>
-                    <input class="unit field" type="text" name="kids" id="kid" value="0">
-                    <button class="btn plus-btn" type="button">
-                      <i class="icon-plus"></i>
-                    </button>
+                  <div class="form-line half-width">
+                    <label for="kid">Дети:</label>
+                    <div class="unit-container clearfix">
+                      <button class="btn minus-btn" type="button">
+                        <i class="icon-minus"></i>
+                      </button>
+                      <input class="unit field" type="text" name="kids" id="kid" value="0">
+                      <button class="btn plus-btn" type="button">
+                        <i class="icon-plus"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <button type="submit">Найти</button>      
-            </form>
+                <button class="search-btn" type="submit"><span>Найти</span></button>      
+              </form>
+            </div>
             <section class="map" >
               <img src="img/map.png" alt="Карта - мемтонахождение" width="1200" height="593">
             </section>
@@ -156,29 +152,25 @@
     </main>
 
      <footer class="main-footer">
-      <div class="container" >
-          <p class="contacts">
-          <a href="#">#visitSEDONA</a><br>
-          Тел: +7(495) 666-02-66       
-          </p>
-          <div class="SNS">
-            <ul class="SNS">
-              <li><img src="img/tw-icon.png" alt="tweeter"></li>
-              <li><img src="img/fb-icon.png" alt="facebook"></li>
-              <li><img src="img/youtube-icon.png" alt="youtube"></li>
-            </ul>
-          </div>
+          <section class="contacts">
+          <a href="#">#visitSEDONA</a>
+          <p class="text">Тел: +7(495) 666-02-66</p>
+          </section>
+            <aside>
+              <a class="soc-icon soc-icon-tw" href="#" alt="tweeter"></a>
+              <a class="soc-icon soc-icon-fc" href="#" alt="facebook"></a>
+              <a class="soc-icon soc-icon-yo" href="#" alt="youtube"></a>
+            </aside>
           <p class="academy">
             Website by
-            <a href="httpps://htmlacademy.ru">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmla.png" alt="Логотип HTMLакадемии">
             </a>
           </p>
-      </div>  
-    </footer>  
-
+    </footer>
+  </div>
   </body>
-
+  
 </html>
 
 

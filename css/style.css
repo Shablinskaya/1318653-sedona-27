@@ -42,6 +42,7 @@ footer {
 }
 .conteiner{
   background-color: #ffffff;
+
 }
 /* Header */
 .main-navigation{
@@ -75,15 +76,13 @@ footer {
   text-align: right;
 }
 
-.main-navigation a {
+.main-navigation a{
   text-decoration: none;
   color: #000000;
   font-weight: 700;
   cursor: pointer;
   width: 244px;
   height: 56px;
-  border-style: solid;
-
 }
 
 .main-navigation a:hover {
@@ -109,7 +108,7 @@ footer {
 /* index.html */
 
 .index-main {
-  /*margin-top: -14px;*/
+ margin-top: -14px;
   text-align: center;
 }
 
@@ -180,19 +179,29 @@ padding: 46px 60px 64px 60px;
   position: relative;
   margin: auto;
   }
-.resonse-details img{
+.houses span{
+  background-image: url(../img/icon-1.png);
+  width: 75px;
+  height: 72px;
+  left: 160px;
+  bottom: 190px;
   position: absolute;
-  z-index: 1;
-  top: 43px;
 }
-.houses img{
-  right: 964px;
+.food span{
+  background-image: url(../img/icon-3.png);
+  width: 74px;
+  height: 70px;
+  left: 563px;
+  bottom: 190px;
+  position: absolute;
 }
-.food img{
-  right: 565px;
-}
-.gifts img{
-  right: 169px;
+.gifts span{
+  background-image: url(../img/icon-2.png);
+  width: 64px;
+  height: 76px;
+  left: 968px;
+  bottom: 190px;
+  position: absolute;
 }
 
 .resonse-details ul{
@@ -300,55 +309,56 @@ margin-bottom: 26px;
   box-sizing: border-box;
   text-transform: uppercase;
   background: #f2f2f2;
+
 }
 .search-form input{
   width: 346px;
   margin-bottom: 29px;
   color: #000000;
   font-weight: bold;
+  position: relative;
+}
+input[type="text"]::-webkit-input-placeholder {
+  color: #000000;
 }
 .icon-calendar{
-  position: relative;
   cursor: pointer;
   display: block;
-}
-.icon-calendar::before{
   position: absolute;
-  content:'';
+  width: 21px;
+  height: 22px;
+  top: 64px;
+  left: 480px;
   background-image: url(../img/calendar.png);
-  width: 21px;
-  height: 22px;
-  top: 6px;
-  left: -30px;
-  margin: 0;
-  padding: 0;
 }
-.icon-calenda:focus{
-  content:'';
+.icon-calendar:hover{
   background-image: url(../img/calendar-black.png);
-  position: absolute;
-  width: 21px;
-  height: 22px;
-  top: 6px;
-  left: -30px;
-  margin: 0;
-  padding: 0;
-
 }
-.icon-calendar:after + .icon-calendar::before{
-  content:'';
+.icon-calendar:active{
   background-image: url(../img/calendar-blue.png);
-  position: absolute;
-  width: 21px;
-  height: 22px;
-  top: 6px;
-  left: -30px;
-  margin: 0;
-  padding: 0;
 }
 .unit-container input{
   text-align: center;
 }
+.icon-calendar-check-out{
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    top: 130px;
+    left: 480px;
+    background-image: url(../img/calendar.png);
+  }
+  .icon-calendar-check-out:hover{
+    background-image: url(../img/calendar-black.png);
+  }
+  .icon-calendar-check-out:active{
+    background-image: url(../img/calendar-blue.png);
+  }
+  .unit-container input{
+    text-align: center;
+  }
 .half-width .btn{
   width: 38px;
   height: 38px;
@@ -357,6 +367,9 @@ margin-bottom: 26px;
   background-repeat: no-repeat;
   font-size: 0; 
   border: none;
+}
+.minus-btn i{
+  
 }
 
 .search-form .unit{
@@ -577,6 +590,7 @@ margin-bottom: 26px;
 
  .results{
    border-bottom: 1px solid #e5e5e5;
+   box-sizing: border-box;
  }
  .conteiner-match{
    display: flex;
@@ -616,18 +630,34 @@ margin-bottom: 26px;
    margin-left: auto;
    box-sizing: border-box;
    position: relative;
-  }
- .icon-up-dir span::before{
-  content: "";
-  background: url(../img/icon-up-dir.png);
+}
+.icon-up-dir{
+  position: absolute;
   width: 11px;
   height: 10px;
-  position: absolute;
-  
+  background-image: url(../img/icon-up-dir.png);
+  background-repeat: no-repeat;
+  left: -31px;
 }
+.icon-up-dir:hover{
+  background-image: url(../img/icon-up-dir-black.png);
+}
+.icon-up-dir:active{
+  background-image: url(../img/icon-up-dir-active.png);
+}
+
 .icon-down-dir{
-  background: url(../img/icon-down-dir.png) no-repeat;
+  position: absolute;
+  width: 11px;
+  height: 10px;
+  background-image: url(../img/icon-down-dir.png);
+  background-repeat: no-repeat;
+  left: -13px;
 }
+.icon-down-dir:hover{
+  background-image: url(../img/icon-down-dir-black.png);
+}
+
 
 .match span {
   font-weight: bold;
@@ -804,18 +834,31 @@ aside {
   background-position: center;
   background-repeat: no-repeat;
   font-size: 0;
+  position: relative;
 }
 .soc-icon-tw{
-  content:"";
+  position: absolute;
   width: 17px;
   height: 15px;
   background-image: url(../img/tw-icon.png);
+  left: 35%;
+  top: 35%;
 }
 .soc-icon-fc{
+  position: absolute;
+  width: 12px;
+  height: 22px;
   background-image: url(../img/fb-icon.png);
+  left: 33%;
+  top: 26%;
 }
 .soc-icon-yo{
+  position: absolute;
+  width: 20px;
+  height: 16px;
   background-image: url(../img/youtube-icon.png);
+  left: 28%;
+  top: 36%;
 }
 .soc-icon:hover{
   background-color: #669ec0;
@@ -831,16 +874,15 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width: 197px;
+position: relative;
 }
 .container-footer p{
   margin: 0;
 }
-.academy img:hover{
-  background: #669ec0;
+.academy a{
+  svg: url(../img/logo-name-grey.svg) #bdbbbc;
+  width: 115px;
+  height: 41px;
+  position: absolute;
+  left: 82px;
 }
-
-.academy img:active{
-  color: rgba(255, 255, 255, 0.3);
-  background: #5496bd;
-}
-

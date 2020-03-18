@@ -131,7 +131,7 @@ footer {
   left: -1px;
   bottom: 0;
   width: 1201px;
-  height: 57.5px;
+  height: 57px;
   background: url(../img/polygon.png) no-repeat;
 }
 .resonse-header{   
@@ -179,18 +179,40 @@ padding: 46px 60px 64px 60px;
 .resonse-details{
   display: flex;
   box-sizing: border-box;
-  position: relative;
   margin: auto;
   }
+ul.resonse-details li{
+  width: 33.3%;
+  padding: 30px 72px;
+  box-sizing: border-box;
+  padding-top: 116px;
+  position: relative;
+  padding-top: 136px;
+  padding-bottom: 75px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+.item-icon{
+  top: 36px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 ul span{
   background-image: url(../img/icon-1.png);
   position: absolute;
+  width: 75px;
+  height: 72px;
 }
 .food span{
   background-image: url(../img/icon-3.png);
-}
+  width: 74px;
+  height: 70px;
+ }
 .gifts span{
   background-image: url(../img/icon-2.png);
+  width: 64px;
+  height: 76px;
 }
 
 
@@ -304,6 +326,9 @@ margin-bottom: 26px;
 }
 input[type="text"]::-webkit-input-placeholder {
   color: #000000;
+}
+.kid label{
+  text-align: center;
 }
 .icon-calendar{
   cursor: pointer;
@@ -835,6 +860,7 @@ padding-bottom: 32px;
 padding-top: 36px;
 align-items: center;
 box-sizing: border-box;
+min-height: 120px;
 }
 .main-footer a{
   text-decoration: none;

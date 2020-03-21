@@ -55,10 +55,10 @@ footer {
 }
 
 .main-navigation li{
-  width: 20%;
+  width: 26%;
 }
  .main-navigation li:nth-child(2){
-  margin-right: 20%;
+  margin-right: 9%;
 }
 .left{
   text-align: left;
@@ -122,11 +122,12 @@ footer {
 }
 .welcome{
   position: relative;
-  height: 599px;
+  height: 506px;
   background: #f2f2f2 url("../img/background-photo.jpg") no-repeat ;
+  background-position: center -83px;
 }
 .welcome::after{
-  content: '';
+  content: "";
   position: absolute;
   left: -1px;
   bottom: 0;
@@ -136,11 +137,14 @@ footer {
 }
 .resonse-header{   
   padding-top: 60px;
-  padding-bottom: 56px;
-  line-height: 26px;
+  padding-bottom: 34px;
+  line-height: 29px;
+ }
+ .resonse-header h1{
+   font-size: 21px;
  }
  .resonse-header p{
-   margin-top: 38px;
+   margin-top: 25px;
    color: #333333;
  }
 
@@ -158,7 +162,7 @@ justify-content: center;
 align-items: center;
 width: 400px;
 box-sizing: border-box;
-padding: 46px 60px 64px 60px;
+padding: 46px 60px 60px 60px;
 }
 .index-columns .resonse-text{
   background-color: #81b3d2;
@@ -166,10 +170,10 @@ padding: 46px 60px 64px 60px;
 }
 .resonse-text h2{
   width: 151px;
-  margin-bottom: 16px;
+  margin-bottom: 26px;
 }
 .resonse-text .number{
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .resonse-text p{
   margin: 0;
@@ -182,66 +186,74 @@ padding: 46px 60px 64px 60px;
   margin: auto;
   }
 ul.resonse-details li{
-  width: 33.3%;
-  padding: 30px 72px;
+  width: 34.3%;
   box-sizing: border-box;
-  padding-top: 116px;
   position: relative;
-  padding-top: 136px;
-  padding-bottom: 75px;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-top: 162px;
+  padding-bottom: 82px;
+  padding-left: 56px;
+  padding-right: 55px;
 }
 .item-icon{
-  top: 36px;
-  left: 0;
+  top: 60px;
+  left: 2px;
   right: 0;
   margin: auto;
 }
-ul span{
+ul .item-icon{
   background-image: url(../img/icon-1.png);
   position: absolute;
   width: 75px;
   height: 72px;
 }
-.food span{
+.food .item-icon{
   background-image: url(../img/icon-3.png);
   width: 74px;
   height: 70px;
+  top: 62px;
+  left: 2px;
+
  }
-.gifts span{
+.gifts .item-icon{
   background-image: url(../img/icon-2.png);
   width: 64px;
   height: 76px;
+  top: 56px;
+  left: 2px;
 }
 
 
 ul h3{
 margin-bottom: 26px;
+font-size: 21px;
 }
 .resonse-details .text-resonse{
   width: 285px;
   margin: 0;
 }
+
 .columns{
   display: flex;
 }
 .columns .title{
   align-self: center;
+  margin-bottom: 23px;
 }
 .columns .resonse-text{
   background-color: #eeeeee;
+  line-height: 22px;
 }
 .columns p{
   font-weight: normal;
   font-size: 14px;
   color: #333333;
-  margin-bottom: 16px;
+  margin-bottom: 23px;
   width: 261px;
 }
-
-
-
+.columns .text{
+  margin-bottom: 0;
+  line-height: 21px;
+}
 .resonse-send{
   display: flex;
   flex-direction: column;
@@ -249,12 +261,16 @@ margin-bottom: 26px;
   align-items: center;
   padding-top: 57px;
 }
-
+.resonse-send h1{
+  font-size: 30px;
+  line-height: 22px;
+}
 .text-resonse-send{
-  width: 450px;
-  margin-top: 26px;
-  margin-bottom: 52px;
+  width: 448px;
+  margin-top: 31px;
+  margin-bottom: 49px;
   color: #333333;
+  line-height: 24px;
 }
 .btn-srch-window{
   width: 568px;
@@ -288,6 +304,7 @@ margin-bottom: 26px;
   font-weight: bold;
   background: #ffffff;
   z-index: 1;
+  line-height: 28px;
 }
 .search-form .form-line{
   display: flex;
@@ -298,6 +315,10 @@ margin-bottom: 26px;
   box-sizing: border-box;
 
 }
+.search-form .form-line:last-child{
+  margin-bottom: 55px;
+}
+
 .unit-container{
   display: flex;
 }
@@ -329,6 +350,7 @@ input[type="text"]::-webkit-input-placeholder {
 }
 .kid label{
   text-align: center;
+  width: 88px;
 }
 .icon-calendar{
   cursor: pointer;
@@ -336,8 +358,8 @@ input[type="text"]::-webkit-input-placeholder {
   position: absolute;
   width: 21px;
   height: 22px;
-  top: 64px;
-  left: 480px;
+  top: 65px;
+  left: 484px;
   background-image: url(../img/calendar.png);
 }
 .icon-calendar:hover{
@@ -368,6 +390,7 @@ input[type="text"]::-webkit-input-placeholder {
   .unit-container input{
     text-align: center;
   }
+
 .half-width .btn{
   width: 38px;
   height: 38px;
@@ -464,10 +487,9 @@ label:last-child{
 
 .search-form .search-btn{
   display: block;
-  width: 458px;
+  width: 459px;
   margin: 0 auto;
-  margin-top: 54px;
-  padding: 14px 10px 15px;
+  padding: 16px 10px 15px;
   box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
@@ -488,7 +510,6 @@ label:last-child{
 .search-form .search-btn:active span{
   opacity: 0.3;
 }
-
 .map{
   padding: 0;
   margin: 0;
@@ -505,7 +526,7 @@ label:last-child{
   }
 
   .filter-menu{
-    padding-top: 31px;
+    padding-top: 27px;
     padding-left: 72px;
     padding-right:72px;
     padding-bottom: 31px;
@@ -516,6 +537,10 @@ label:last-child{
  .filter-menu ul{
   padding:0;
  }
+
+ .filter-menu ul:first-child{
+   margin-right: 20px;
+ }
  .one-fourth{
   text-align: left;
  }
@@ -523,36 +548,34 @@ label:last-child{
     display: none;
 }
 .filters-hotels h2{
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   font-size: 16px;
 }
 .check:not(:last-child){
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 }
 .check label{
   position: relative;
-  margin-left: 40px;
+  margin-left: 39px;
   cursor: pointer;
-  width: 50px;
-  height: 23px;
   display: flex;
   line-height: 24px;
 }
 .one-fourth:nth-child(2n) label{
-  margin-left: 42px;
+  margin-left: 29px;
 }
 .check label::before{
   content: url(../img/checkbox-off.png);
   position: absolute;
   display: block;
-  width: 50px;
+  width: 23px;
   height: 23px;
   left: -40px;
   top: 0;
 }
 .check input:checked + label::before{
   content: url(../img/checkbox-on.png);
-  width: 50px;
+  width: 23px;
   height: 23px;
 }
 .check input:disabled + label{
@@ -571,7 +594,7 @@ label:last-child{
   margin-bottom: 13px;
 }
 .right-one-fourth{
-  margin-right: 92px;
+  margin-right: 109px;
 }
 .price-controls{
   position: relative;
@@ -584,7 +607,7 @@ label:last-child{
 .price-controls label{
   display: inline-block;
   width: 85px;
-  margin-left: 52px;
+  margin-left: 48px;
   line-height: 32px;
   vertical-align: top;
   cursor: pointer;
@@ -727,11 +750,10 @@ label:last-child{
 .icon-down-dir:hover{
   background-image: url(../img/icon-down-dir-black.png);
 }
-.match span {
+.item-icon {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin-right: 49px;
 }
  
 
@@ -838,11 +860,17 @@ label:last-child{
   justify-content: flex-end;
   align-content: space-between;
 }
-.stars .raiting{
+.raiting {
   background-color: #f2f2f2;
   color: #666666;
   padding: 5px 15px;
   margin-bottom: 7px;
+  margin: 0;
+}
+.stars span{
+  width: 18px;
+  height: 17px;
+  background-image: url(../img/star.png);
 }
 
   /*Footer*/
@@ -854,10 +882,10 @@ opacity: 0.9;
 background-color: #ffffff;
 display: flex;
 justify-content: space-between;
-padding-left: 72px;
-padding-right: 72px; 
+padding-left: 124px;
+padding-right: 100px; 
 padding-bottom: 32px;
-padding-top: 36px;
+padding-top: 29px;
 align-items: center;
 box-sizing: border-box;
 min-height: 120px;
@@ -869,7 +897,7 @@ min-height: 120px;
   color: #000000;
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 33px;
   text-align: left;
   width: 224px;
 }
@@ -892,12 +920,12 @@ aside {
   width: 150px;
   padding: 0;
   margin-right: 228px;
-  margin-left: 169px;
+  margin-left: 176px;
 }
 
 .soc-icon{
   width: 46px;
-  height: 48px;
+  height: 47px;
   background-color: #81b3d2;
   background-position: center;
   background-repeat: no-repeat;
@@ -917,8 +945,8 @@ aside {
   width: 12px;
   height: 22px;
   background-image: url(../img/fb-icon.png);
-  left: 33%;
-  top: 26%;
+  left: 39%;
+  top: 28%;
 }
 .soc-icon-yo{
   position: absolute;

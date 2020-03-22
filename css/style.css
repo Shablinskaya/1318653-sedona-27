@@ -478,10 +478,6 @@ body {
   line-height:24px;
   }
   
-  .one-fourth:nth-child(2n) label {
-  margin-left:29px;
-  }
-  
   .check label::before {
   content:url(../img/checkbox-off.png);
   position:absolute;
@@ -518,8 +514,8 @@ body {
   margin-bottom:10px;
   }
   
-  .right-one-fourth {
-  margin-right:109px;
+  .one-fourth {
+  margin-right:120px;
   }
   
   .price-controls {

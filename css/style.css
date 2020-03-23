@@ -42,8 +42,10 @@ body {
   display:flex;
   padding-left:6%;
   padding-right:6%;
-  min-height:56px;
   align-items:center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  line-height: 60%; 
   }
   
   .main-navigation li {
@@ -222,6 +224,7 @@ body {
   .resonse-details .text-resonse {
   width:285px;
   margin:0;
+  color: #333333;
   }
   
   .columns .title {
@@ -352,9 +355,8 @@ body {
   position:absolute;
   width:21px;
   height:22px;
-  top:63px;
-  left:483px;
-  background-image:url(../img/calendar.png);
+  top:62px;
+  left:477px;
   }
   
   .icon-calendar-check-out {
@@ -363,9 +365,8 @@ body {
   position:absolute;
   width:21px;
   height:22px;
-  top:130px;
-  left:483px;
-  background-image:url(../img/calendar.png);
+  top:129px;
+  left:477px;
   }
   
   .half-width .btn {
@@ -427,6 +428,7 @@ body {
   outline:none;
   margin:0 auto;
   padding:21px 10px 20px;
+  font-weight: bold;
   }
   
   .search-form .search-btn:active {
@@ -574,28 +576,22 @@ body {
   
   .range-controls .range-toggle {
   position:absolute;
-  top:-9px;
-  width:4px;
-  height:4px;
-  background:#ababab;
-  border:8px solid #fff;
-  border-radius:50%;
-  box-shadow:0 2px 1px 0 rgba(0,1,1,0.2);
+  top:-10px;
   cursor:pointer;
   }
   
-  .range-controls .range-toggle:hover {
-  background:#1c4f80;
-  }
-  
   .range-controls .range-toggle-min {
-  left:0;
+  left:-5px;
   }
   
   .range-controls .range-toggle-max {
-  left:253px;
+  left:247px;
   }
   
+  .range-toggle svg:hover {
+  width: 22px;
+  height: 24px;
+  }
   .filter-range .show-btn {
   display:block;
   line-height:20px;
@@ -764,6 +760,7 @@ body {
   color:#fff;
   background-color:#81b3d2;
   padding:3px 17px;
+  font-weight: bold;
   }
   
   .hotels .more-btn:active {
@@ -773,16 +770,16 @@ body {
   
   .hotels .reserve {
   display:inline-block;
-  width:142px;
   vertical-align:top;
   }
   
   .hotels .reserve-btn {
   color:#fff;
   background-color:#766357;
-  width:142px;
+  width:108px;
   text-transform:uppercase;
-  padding:5.5px 16px;
+  padding:3px 17px;
+  font-weight: bold;
   }
   
   .hotels .reserve-btn:hover {
@@ -824,7 +821,6 @@ body {
   justify-content:space-between;
   align-items:center;
   box-sizing:border-box;
-  min-height:120px;
   padding:27px 100px 27px 124px;
   }
   
@@ -838,7 +834,7 @@ body {
   font-size:21px;
   line-height:33px;
   text-align:left;
-  width:224px;
+  width:230px;
   }
   
   .contacts .text {
@@ -915,7 +911,6 @@ body {
   .academy a {
   width:115px;
   height:41px;
-  position:absolute;
   left:81px;
   }
   
@@ -947,18 +942,26 @@ body {
   display:flex;
   }
   
-  input[type="text"]::-webkit-input-placeholder,.contacts a,.contacts a:hover,footer a:active {
+  input[type="text"]::-webkit-input-placeholder,footer a:active, footer a {
   color:#000;
   }
-  
-  .icon-calendar:hover,.icon-calendar-check-out:hover {
-  background-image:url(../img/calendar-black.png);
+
+  input[type="text"]::-moz-placeholder{
+  color:#000;
   }
-  
-  .icon-calendar:active,.icon-calendar-check-out:active {
-  background-image:url(../img/calendar-blue.png);
+
+  input[type="text"]:-moz-placeholder{
+  color:#000;
   }
-  
+
+  input[type="text"]:-ms-input-placeholder{
+  color:#000;
+  }
+
+  a{
+  color:#000;
+  }
+
   .minus-btn i::before,.plus-btn i::before {
   content:"";
   display:block;
@@ -983,6 +986,29 @@ body {
   
   .unit-container button:active,button:focus,.filter-range .show-btn:active {
   outline:none;
+  }
+
+  .form-line button{
+  border:0;
+  background: transparent;
+  }
+
+  .form-line button{
+    fill: #cacaca;
+  }
+  
+  .form-line button:hover{
+    fill: #000;
+  }
+
+  .form-line button:active{
+    fill: #81b3d2;
+  }
+
+  .range-controls button{
+    border:0;
+    outline:none;
+    background: transparent;
   }
   
   .search-form .search-btn:hover,.hotels .more-btn:hover {

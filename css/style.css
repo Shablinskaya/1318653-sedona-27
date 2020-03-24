@@ -114,11 +114,11 @@ body {
   .welcome::after {
   content:"";
   position:absolute;
-  left:-1px;
-  bottom:-1px;
-  width:1201px;
+  left:0;
+  bottom:-2px;
+  width:1200px;
   height:59px;
-  background:url(../img/polygon.png) no-repeat;
+  background:url(../img/intro-mask.svg) no-repeat;
   }
   
   .resonse-header {
@@ -185,23 +185,18 @@ body {
   
   .item-icon {
   top:60px;
-  left:2px;
+  left:0px;
   right:0;
-  font-weight:700;
-  font-size:21px;
-  line-height:26px;
   margin:auto;
   }
   
   ul .item-icon {
-  background-image:url(../img/icon-1.png);
   position:absolute;
   width:77px;
   height:72px;
   }
   
   .food .item-icon {
-  background-image:url(../img/icon-3.png);
   width:74px;
   height:70px;
   top:61px;
@@ -209,7 +204,6 @@ body {
   }
   
   .gifts .item-icon {
-  background-image:url(../img/icon-2.png);
   width:64px;
   height:76px;
   top:56px;
@@ -479,7 +473,8 @@ body {
   }
   
   .check label::before {
-  content:url(../img/checkbox-off.png);
+  content:"";
+  background-image:url(../img/checkbox-off.svg);
   position:absolute;
   display:block;
   width:23px;
@@ -489,8 +484,9 @@ body {
   }
   
   .check input:checked + label::before {
-  content:url(../img/checkbox-on.png);
-  width:23px;
+  content:"";
+  background-image:url(../img/checkbox-on.svg);
+  width:26px;
   height:23px;
   left:-40px;
   }
@@ -662,32 +658,32 @@ body {
   position:absolute;
   width:11px;
   height:10px;
-  background-image:url(../img/icon-up-dir.png);
-  background-repeat:no-repeat;
   left:-35px;
-  top:-3px;
+  top:-8px;
   }
   
-  .icon-up-dir:hover {
-  background-image:url(../img/icon-up-dir-black.png);
+  .color-icon{
+  fill:#cacaca;
   }
-  
-  .icon-up-dir:active {
-  background-image:url(../img/icon-up-dir-active.png);
+
+  .down{
+  fill:#81b3d2;
+  }
+
+  .color-icon:hover{
+  fill:#000;
+  }
+
+  .color-icon:active{
+  fill:#81b3d2;
   }
   
   .icon-down-dir {
   position:absolute;
   width:11px;
   height:10px;
-  background-image:url(../img/icon-down-dir.png);
-  background-repeat:no-repeat;
   left:-12px;
-  top:-4px;
-  }
-  
-  .icon-down-dir:hover {
-  background-image:url(../img/icon-down-dir-black.png);
+  top:-9px;
   }
   
   .resalts-hotels {
@@ -808,7 +804,6 @@ body {
   .stars span {
   width:18px;
   height:17px;
-  background-image:url(../img/star.png);
   margin-right:4px;
   }
   
